@@ -10,6 +10,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void fade(View view) {
         ImageView blue = (ImageView)findViewById(R.id.blue);
+
+        blue.animate().translationXBy(view.getWidth()).setDuration(2000);
+    }
+
+    /*
+    public void fade(View view) {
+        ImageView blue = (ImageView)findViewById(R.id.blue);
         ImageView green = (ImageView)findViewById(R.id.green);
 
         if (blue.isClickable()) {
@@ -31,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             blue.setClickable(true);
         }
     }
+    */
 
 
 
