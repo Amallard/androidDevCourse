@@ -85,3 +85,16 @@ myImage.animate()
 >gameEndView.startAnimation(slide_down);
 >gameEndView.setVisibility(View.INVISIBLE);
 >```
+
+####Inline Video
+```java
+VideoView vid = (VideoView)findViewById(R.id.videoView);
+vid.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.myVideo);
+
+MediaController media = new MediaController(this);
+media.setAnchorView(vid);
+
+vid.setMediaController(media);
+
+vid.start();
+```
